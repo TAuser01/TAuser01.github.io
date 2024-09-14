@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK House Evolution - Timeline</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Set up the grid layout */
+        .timeline {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            grid-template-rows: 1fr 1fr;    /* Two rows */
+            height: 100vh; /* Make it fill the entire page height */
+            gap: 20px;
+        }
+
+        .period {
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        /* Add a semi-transparent background behind the text */
+        .period p, .period h3 {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Place the eras in specific grid positions */
+        .victorian {
+            grid-column: 1;
+            grid-row: 1;
+            background-image: url('https://www.quadrigaltd.com/wp-content/uploads/2020/07/Victorian-terrace-old.png');
+        }
+
+        .edwardian {
+            grid-column: 2;
+            grid-row: 1;
+            background-image: url('https://www.thespruce.com/thmb/Cvtman-tV_IECAk3bGn1OEg7boA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-115571719-4a8d705d5c8548c6b1cee46759fcfd78.jpg');
+        }
+
+        .postwar {
+            grid-column: 1;
+            grid-row: 2;
+            background-image: url('https://live.staticflickr.com/65535/52726166289_7ed2201e32.jpg');
+        }
+
+        .modern {
+            grid-column: 2;
+            grid-row: 2;
+            background-image: url('https://www.wienerberger.co.uk/content/dam/wienerberger/united-kingdom/marketing/photography/reference-projects/barclay-court/UK_MKT_PHO_REF_Barclay_Court_Dublin_Marziale_007.jpg');
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Timeline of UK House Evolution</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="timeline">
+        <div class="period victorian">
+            <h3>Victorian Era (1837-1901)</h3>
+            <p>The Victorian era saw the rapid expansion of cities and towns across the UK due to the Industrial Revolution. With the rise of factories and urban centers, there was a significant demand for affordable housing for the growing working-class population. Rows of terraced houses were constructed in large numbers, particularly in industrial towns like Manchester, Birmingham, and London. These homes, usually made from red or yellow brick, were often compact, with narrow facades and small backyards.</p>
+        </div>
+
+        <div class="period edwardian">
+            <h3>Edwardian Era (1901-1914)</h3>
+            <p>The Edwardian era marked a departure from the densely packed, often dark and cramped homes of the Victorian period. With a focus on improving the quality of life, Edwardian houses were designed to be more spacious, bright, and comfortable. Many homes from this era featured larger front and back gardens, offering a sense of privacy and tranquility. Bay windows became a defining characteristic, allowing more light into the living spaces.</p>
+        </div>
+
+        <div class="period postwar">
+            <h3>Post-war Housing (1945-1980)</h3>
+            <p>The aftermath of World War II left the UK with a severe housing shortage, as many homes had been destroyed during bombings, and the population was growing rapidly. In response, the government initiated large-scale building programs to provide affordable housing for the masses. The focus during this period shifted to functionality and speed of construction.</p>
+        </div>
+
+        <div class="period modern">
+            <h3>Modern Era (1980-Present)</h3>
+            <p>The modern era of housing in the UK reflects the changing needs and values of society. As environmental awareness grew, the demand for energy-efficient, eco-friendly homes increased. Modern homes are designed to be sustainable, using materials and technologies that minimize energy consumption and reduce environmental impact.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 UK House History</p>
+    </footer>
+
+</body>
+</html>
